@@ -135,6 +135,9 @@
     <a href="https://x.com/0x718_718" class="link-button"><i class="fa-brands fa-x-twitter"></i> <span>kiwiiii X</span></a>
     <a href="https://x.com/eng_kiwiiii" class="link-button"><i class="fa-brands fa-x-twitter"></i> <span>Program Account</span></a>
     <a href="https://discord.gg/Um6TRyK2bn" class="link-button"><i class="fa-brands fa-discord"></i> <span>Kiwi's Discord Channel</span></a>
+    <a href="assets/PVP.ipa" download class="link-button" onclick="startDownload(this)">
+        <i class="fa-solid fa-download"></i> <span>下載 Player Versus Player (Beta)</span>
+    </a>
     <div class="link-button" onclick="toggleExpand('special-content', this)">
         <i class="fa-solid fa-chart-line"></i> <span>OKX | DA 合作連結</span>
         <i class="fa-solid fa-chevron-down arrow"></i>
@@ -214,6 +217,13 @@
             iframe.style.height = event.data.height + "px";
         }
     }, false);
+
+    function startDownload(button) {
+        button.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>下載中...</span>';
+        setTimeout(() => {
+            button.innerHTML = '<i class="fa-solid fa-download"></i> <span>下載 Player Versus Player (Beta)</span>';
+        }, 5000); // 5 秒後恢復
+    }
 
 </script>
 </body>
