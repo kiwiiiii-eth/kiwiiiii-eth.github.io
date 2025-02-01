@@ -1,0 +1,613 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="zh-Hant">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>個人 GitHub Pages</title>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--            background-color: black;-->
+<!--            overflow: hidden;-->
+<!--            max-width: 100%;-->
+<!--            overflow-x: hidden;-->
+<!--        }-->
+<!--        #particles-js {-->
+<!--            position: fixed;-->
+<!--            width: 100%;-->
+<!--            height: 100%;-->
+<!--            z-index: -1;-->
+<!--        }-->
+<!--        .content {-->
+<!--            position: absolute;-->
+<!--            top: 50%;-->
+<!--            left: 50%;-->
+<!--            transform: translate(-50%, -50%);-->
+<!--            color: white;-->
+<!--            text-align: center;-->
+<!--            font-size: 24px;-->
+<!--            padding: 20px;-->
+<!--            background: rgba(0, 0, 0, 0.6);-->
+<!--            border-radius: 10px;-->
+<!--            z-index: 10;-->
+<!--        }-->
+<!--        @media (max-width: 768px) {-->
+<!--            .content {-->
+<!--                font-size: 18px;-->
+<!--            }-->
+<!--        }-->
+<!--        @media (max-width: 480px) {-->
+<!--            .content {-->
+<!--                font-size: 16px;-->
+<!--            }-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="particles-js"></div>-->
+<!--<div class="content">歡迎來到我的 GitHub Pages</div>-->
+<!--<script>-->
+<!--    const isMobile = window.innerWidth < 768;-->
+<!--    tsParticles.load("particles-js", {-->
+<!--        particles: {-->
+<!--            number: { value: isMobile ? 50 : 120 }, // 增加粒子數量-->
+<!--            move: { enable: true, speed: isMobile ? 1.0 : 1.5 },-->
+<!--            size: { value: isMobile ? 1.5 : 2.5 },-->
+<!--            links: { enable: true, distance: isMobile ? 100 : 120 }, // 增加連線距離-->
+<!--            color: { value: "#ffffff" }-->
+<!--        },-->
+<!--        interactivity: {-->
+<!--            events: {-->
+<!--                onClick: { enable: true, mode: "push" }-->
+<!--            },-->
+<!--            modes: {-->
+<!--                push: { quantity: 3 }-->
+<!--            }-->
+<!--        }-->
+<!--    }).then(() => {-->
+<!--        console.log("tsParticles 加載成功");-->
+<!--    }).catch((error) => {-->
+<!--        console.error("tsParticles 加載失敗:", error);-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="zh-Hant">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>個人連結頁面</title>-->
+<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>-->
+<!--    <style>-->
+<!--        body {-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--            background-color: #121212;-->
+<!--            color: white;-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--        #particles-js {-->
+<!--            position: fixed;-->
+<!--            width: 100%;-->
+<!--            height: 100%;-->
+<!--            z-index: -1;-->
+<!--        }-->
+<!--        .container {-->
+<!--            position: relative;-->
+<!--            top: 50px;-->
+<!--            width: 100%;-->
+<!--            max-width: 400px;-->
+<!--            margin: auto;-->
+<!--        }-->
+<!--        .profile img {-->
+<!--            width: 100px;-->
+<!--            height: 100px;-->
+<!--            border-radius: 50%;-->
+<!--            border: 3px solid white;-->
+<!--        }-->
+<!--        .profile h2 {-->
+<!--            margin: 10px 0 5px;-->
+<!--        }-->
+<!--        .profile p {-->
+<!--            font-size: 14px;-->
+<!--            opacity: 0.8;-->
+<!--        }-->
+<!--        .social-icons {-->
+<!--            display: flex;-->
+<!--            justify-content: center;-->
+<!--            gap: 15px;-->
+<!--            margin: 15px 0;-->
+<!--        }-->
+<!--        .social-icons a {-->
+<!--            color: white;-->
+<!--            font-size: 20px;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+<!--        .link-button {-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            background: rgba(255, 255, 255, 0.1);-->
+<!--            border: 1px solid white;-->
+<!--            padding: 15px;-->
+<!--            margin: 10px 0;-->
+<!--            border-radius: 30px;-->
+<!--            text-decoration: none;-->
+<!--            color: white;-->
+<!--            font-size: 16px;-->
+<!--            transition: 0.3s;-->
+<!--        }-->
+<!--        .link-button:hover {-->
+<!--            background: rgba(255, 255, 255, 0.2);-->
+<!--        }-->
+<!--        .footer {-->
+<!--            margin-top: 30px;-->
+<!--            font-size: 12px;-->
+<!--            opacity: 0.8;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="particles-js"></div>-->
+<!--<div class="container">-->
+<!--    <div class="profile">-->
+<!--        <img src="./assets/profile.png" alt="Profile Picture">-->
+<!--        <h2>𝓴𝓲𝔀𝓲𝓲𝓲𝓲𝓲</h2>-->
+<!--        <p>從一個金融仔，漸漸的變成了程式金融人了：）</p>-->
+<!--    </div>-->
+<!--    <div class="social-icons">-->
+<!--        <a href="#" target="_blank">✖</a>-->
+<!--        <a href="#" target="_blank">🌐</a>-->
+<!--        <a href="#" target="_blank">✉️</a>-->
+<!--    </div>-->
+<!--    <a href="https://x.com/ENG_kiwiiiii" class="link-button">Project Twitter</a>-->
+<!--    <a href="#" class="link-button">🎮 Kiwi’s world | BlockChain | Trade Log</a>-->
+<!--    <a href="#" class="link-button">💲 OKX | DA邀請碼</a>-->
+<!--    <a href="#" class="link-button">₿ crypto.com 辦理金屬卡送35USD</a>-->
+<!--    <div class="footer"> Github.io ✖ Kiwiiiii_eth </div>-->
+<!--</div>-->
+<!--<script>-->
+<!--    tsParticles.load("particles-js", {-->
+<!--        particles: {-->
+<!--            number: { value: 80 },-->
+<!--            move: { enable: true, speed: 1.2 },-->
+<!--            size: { value: 2 },-->
+<!--            links: { enable: true, distance: 100 },-->
+<!--            color: { value: "#ffffff" }-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="zh-Hant">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>個人連結頁面</title>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">-->
+<!--    <style>-->
+<!--        body {-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--            background-color: #121212;-->
+<!--            color: white;-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--        #particles-js {-->
+<!--            position: fixed;-->
+<!--            width: 100%;-->
+<!--            height: 100%;-->
+<!--            z-index: -1;-->
+<!--        }-->
+<!--        .container {-->
+<!--            position: relative;-->
+<!--            top: 50px;-->
+<!--            width: 100%;-->
+<!--            max-width: 400px;-->
+<!--            margin: auto;-->
+<!--        }-->
+<!--        .profile img {-->
+<!--            width: 100px;-->
+<!--            height: 100px;-->
+<!--            border-radius: 50%;-->
+<!--            border: 3px solid white;-->
+<!--        }-->
+<!--        .profile h2 {-->
+<!--            margin: 10px 0 5px;-->
+<!--        }-->
+<!--        .profile p {-->
+<!--            font-size: 14px;-->
+<!--            opacity: 0.8;-->
+<!--        }-->
+<!--        .link-button {-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            background: rgba(255, 255, 255, 0.1);-->
+<!--            border: 1px solid white;-->
+<!--            padding: 15px;-->
+<!--            margin: 10px 0;-->
+<!--            border-radius: 30px;-->
+<!--            text-decoration: none;-->
+<!--            color: white;-->
+<!--            font-size: 16px;-->
+<!--            transition: 0.3s;-->
+<!--            gap: 10px;-->
+<!--            position: relative;-->
+<!--        }-->
+<!--        .link-button i {-->
+<!--            font-size: 20px;-->
+<!--            position: absolute;-->
+<!--            left: 15px;-->
+<!--        }-->
+<!--        .link-button span {-->
+<!--            flex-grow: 1;-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--        .link-button:hover {-->
+<!--            background: rgba(255, 255, 255, 0.2);-->
+<!--        }-->
+<!--        .footer {-->
+<!--            margin-top: 30px;-->
+<!--            font-size: 12px;-->
+<!--            opacity: 0.8;-->
+<!--        }-->
+<!--        .expandable {-->
+<!--            display: none;-->
+<!--            margin-top: 10px;-->
+<!--            background: rgba(255, 255, 255, 0.2);-->
+<!--            padding: 10px;-->
+<!--            border-radius: 10px;-->
+<!--        }-->
+
+<!--        .expandable img {-->
+<!--            max-width: 100%;-->
+<!--            border-radius: 10px;-->
+<!--        }-->
+
+<!--        .expandable button {-->
+<!--            margin-top: 10px;-->
+<!--            padding: 5px 10px;-->
+<!--            background: #fff;-->
+<!--            border: none;-->
+<!--            border-radius: 5px;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="particles-js"></div>-->
+<!--<div class="container">-->
+<!--    <div class="profile">-->
+<!--        <img src="assets/profile.png" alt="Profile Picture">-->
+<!--        <h2>𝓴𝓲𝔀𝓲𝓲𝓲𝓲𝓲</h2>-->
+<!--        <p>從一個金融仔，漸漸的變成了程式金融人了：）</p>-->
+<!--    </div>-->
+<!--    <a href="https://x.com/eng_kiwiiiii" class="link-button"><i class="fa-brands fa-x-twitter"></i> Program Account</a>-->
+<!--    <a href="https://discord.gg/Um6TRyK2bn" class="link-button"><i class="fa-brands fa-discord"></i> Kiwi's Discord Channel</a>-->
+<!--    <a href="https://www.okx.com/join/KIWIIIII" class="link-button"><i class="fa-solid fa-chart-line"></i> OKX | DA邀請碼</a>-->
+<!--    <a href="https://crypto.com/app/caxg75vqma" class="link-button"><i class="fa-brands fa-bitcoin"></i> Crypto 金屬卡 | 質感流幣圈必備品</a>-->
+<!--    <div class="footer"> Github.io ✖ Kiwiiiii_eth </div>-->
+<!--</div>-->
+<!--<script>-->
+<!--    tsParticles.load("particles-js", {-->
+<!--        particles: {-->
+<!--            number: { value: 80 },-->
+<!--            move: { enable: true, speed: 1.2 },-->
+<!--            size: { value: 2 },-->
+<!--            links: { enable: true, distance: 100 },-->
+<!--            color: { value: "#ffffff" }-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="zh-Hant">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>個人連結頁面</title>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">-->
+<!--    <style>-->
+<!--        body {-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--            background-color: #121212;-->
+<!--            color: white;-->
+<!--            font-family: Arial, sans-serif;-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--        #particles-js {-->
+<!--            position: fixed;-->
+<!--            width: 100%;-->
+<!--            height: 100%;-->
+<!--            z-index: -1;-->
+<!--        }-->
+<!--        .container {-->
+<!--            position: relative;-->
+<!--            top: 50px;-->
+<!--            width: 100%;-->
+<!--            max-width: 400px;-->
+<!--            margin: auto;-->
+<!--        }-->
+<!--        .profile img {-->
+<!--            width: 100px;-->
+<!--            height: 100px;-->
+<!--            border-radius: 50%;-->
+<!--            border: 3px solid white;-->
+<!--        }-->
+<!--        .profile h2 {-->
+<!--            margin: 10px 0 5px;-->
+<!--        }-->
+<!--        .profile p {-->
+<!--            font-size: 14px;-->
+<!--            opacity: 0.8;-->
+<!--        }-->
+<!--        .link-button {-->
+<!--            display: flex;-->
+<!--            align-items: center;-->
+<!--            justify-content: center;-->
+<!--            background: rgba(255, 255, 255, 0.1);-->
+<!--            border: 1px solid white;-->
+<!--            padding: 15px;-->
+<!--            margin: 10px 0;-->
+<!--            border-radius: 30px;-->
+<!--            text-decoration: none;-->
+<!--            color: white;-->
+<!--            font-size: 16px;-->
+<!--            transition: 0.3s;-->
+<!--            gap: 10px;-->
+<!--            position: relative;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+<!--        .link-button i {-->
+<!--            font-size: 20px;-->
+<!--            position: absolute;-->
+<!--            left: 15px;-->
+<!--        }-->
+<!--        .link-button span {-->
+<!--            flex-grow: 1;-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--        .link-button:hover {-->
+<!--            background: rgba(255, 255, 255, 0.2);-->
+<!--        }-->
+<!--        .footer {-->
+<!--            margin-top: 30px;-->
+<!--            font-size: 12px;-->
+<!--            opacity: 0.8;-->
+<!--        }-->
+<!--        .expandable {-->
+<!--            display: none;-->
+<!--            margin-top: 10px;-->
+<!--            background: rgba(255, 255, 255, 0.2);-->
+<!--            padding: 10px;-->
+<!--            border-radius: 10px;-->
+<!--        }-->
+
+<!--        .expandable img {-->
+<!--            max-width: 100%;-->
+<!--            border-radius: 10px;-->
+<!--        }-->
+
+<!--        .expandable button {-->
+<!--            margin-top: 10px;-->
+<!--            padding: 5px 10px;-->
+<!--            background: #fff;-->
+<!--            border: none;-->
+<!--            border-radius: 5px;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="particles-js"></div>-->
+<!--<div class="container">-->
+<!--    <div class="profile">-->
+<!--        <img src="assets/profile.png" alt="Profile Picture">-->
+<!--        <h2>𝓴𝓲𝔀𝓲𝓲𝓲𝓲𝓲</h2>-->
+<!--        <p>從一個金融仔，漸漸的變成了程式金融人了：）</p>-->
+<!--    </div>-->
+<!--    <a href="https://x.com/eng_kiwiiiii" class="link-button"><i class="fa-brands fa-x-twitter"></i> Program Account</a>-->
+<!--    <a href="https://discord.gg/Um6TRyK2bn" class="link-button"><i class="fa-brands fa-discord"></i> Kiwi's Discord Channel</a>-->
+<!--    <div class="link-button" onclick="toggleExpand('special-content')">-->
+<!--        <i class="fa-solid fa-chart-line"></i> <span>OKX | DA 合作連結</span>-->
+<!--    </div>-->
+<!--    <div id="special-content" class="expandable">-->
+<!--        <img src="assets/okxrefer.png" alt="Special Content">-->
+<!--        <button onclick="window.open('https://www.okx.com/join/KIWIIIII', '_blank')">前往查看</button>-->
+<!--    </div>-->
+<!--    <a href="https://crypto.com/app/caxg75vqma" class="link-button"><i class="fa-brands fa-bitcoin"></i> Crypto 金屬卡 | 質感流幣圈必備品</a>-->
+<!--    <div class="footer"> Github.io ✖ Kiwiiiii_eth </div>-->
+<!--</div>-->
+<!--<script>-->
+<!--    function toggleExpand(id) {-->
+<!--        const element = document.getElementById(id);-->
+<!--        if (element.style.display === "none" || element.style.display === "") {-->
+<!--            element.style.display = "block";-->
+<!--        } else {-->
+<!--            element.style.display = "none";-->
+<!--        }-->
+<!--    }-->
+<!--    tsParticles.load("particles-js", {-->
+<!--        particles: {-->
+<!--            number: { value: 80 },-->
+<!--            move: { enable: true, speed: 1.2 },-->
+<!--            size: { value: 2 },-->
+<!--            links: { enable: true, distance: 100 },-->
+<!--            color: { value: "#ffffff" }-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人連結頁面</title>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .container {
+            position: relative;
+            top: 50px;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .profile h2 {
+            margin: 10px 0 5px;
+        }
+        .profile p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+            gap: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        .link-button i:first-child {
+            position: relative;
+            left: 10px;
+        }
+        .link-button span {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .arrow {
+            position: absolute;
+            right: 15px;
+            font-size: 16px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .link-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        .expandable {
+            display: none;
+            margin-top: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .expandable img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .expandable button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="particles-js"></div>
+<div class="container">
+    <div class="profile">
+        <img src="assets/profile.png" alt="Profile Picture">
+        <h2>𝓴𝓲𝔀𝓲𝓲𝓲𝓲𝓲</h2>
+        <p>從一個金融仔，漸漸的變成了程式金融人了：）</p>
+    </div>
+    <a href="https://x.com/eng_kiwiiiii" class="link-button"><i class="fa-brands fa-x-twitter"></i> <span>Program Account</span></a>
+    <a href="https://discord.gg/Um6TRyK2bn" class="link-button"><i class="fa-brands fa-discord"></i> <span>Kiwi's Discord Channel</span></a>
+    <div class="link-button" onclick="toggleExpand('special-content', this)">
+        <i class="fa-solid fa-chart-line"></i> <span>OKX | DA 合作連結</span>
+        <i class="fa-solid fa-chevron-down arrow"></i>
+    </div>
+    <div id="special-content" class="expandable">
+        <img src="assets/okxrefer.png" alt="Special Content">
+        <button onclick="window.open('https://www.okx.com/join/KIWIIIII', '_blank')">前往查看</button>
+    </div>
+    <a href="https://crypto.com/app/caxg75vqma" class="link-button"><i class="fa-brands fa-bitcoin"></i> <span>Crypto 金屬卡 | 質感流幣圈必備品</span></a>
+    <div class="footer"> Github.io ✖ Kiwiiiii_eth </div>
+</div>
+<script>
+    function toggleExpand(id, button) {
+        const element = document.getElementById(id);
+        const arrow = button.querySelector('.arrow');
+        if (element.style.display === "none" || element.style.display === "") {
+            element.style.display = "block";
+            arrow.style.transform = "rotate(180deg)";
+        } else {
+            element.style.display = "none";
+            arrow.style.transform = "rotate(0deg)";
+        }
+    }
+    tsParticles.load("particles-js", {
+        particles: {
+            number: { value: 80 },
+            move: { enable: true, speed: 1.2 },
+            size: { value: 2 },
+            links: { enable: true, distance: 100 },
+            color: { value: "#ffffff" }
+        }
+    });
+</script>
+</body>
+</html>
