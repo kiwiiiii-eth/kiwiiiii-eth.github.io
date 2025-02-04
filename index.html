@@ -122,6 +122,73 @@
             margin-top: 50px;
             border-radius: 10px;
         }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .icon {
+            font-size: 20px;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.0);
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .icon:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .content {
+            display: none;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .link-section {
+            display: none;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        #navbar-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.0);
+            border-radius: 10px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon-text {
+            display: none; /* 預設隱藏文字 */
+            font-size: 14px;
+        }
+
+        .icon:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .custom-icon {
+            width: 24px;
+            height: 24px;
+        }
     </style>
 </head>
 <body onclick="spawnJiikawa(event)">
@@ -130,23 +197,62 @@
     <div class="profile">
         <img src="assets/profile.png" alt="Profile Picture">
         <h2>𝓴𝓲𝔀𝓲𝓲𝓲𝓲𝓲</h2>
-        <p>從一個金融仔，漸漸的變成了程式金融人了：）</p>
+        <p>從一個金融仔，漸漸的變成了程式金融仔：）</p>
     </div>
-    <a href="https://x.com/0x718_718" class="link-button"><i class="fa-brands fa-x-twitter"></i> <span>kiwiiii X</span></a>
-    <a href="https://x.com/eng_kiwiiii" class="link-button"><i class="fa-brands fa-x-twitter"></i> <span>Program Account</span></a>
-    <a href="https://discord.gg/Um6TRyK2bn" class="link-button"><i class="fa-brands fa-discord"></i> <span>Kiwi's Discord Channel</span></a>
-    <a href="assets/PVP.ipa" download class="link-button" onclick="startDownload(this)">
-        <i class="fa-solid fa-download"></i> <span>下載 Player Versus Player (Beta)</span>
-    </a>
-    <div class="link-button" onclick="toggleExpand('special-content', this)">
-        <i class="fa-solid fa-chart-line"></i> <span>OKX | DA 合作連結</span>
-        <i class="fa-solid fa-chevron-down arrow"></i>
+    <div class="navbar">
+        <div id="navbar-icons">
+            <div class="icon" onclick="toggleLinks('crypto-links', this)">
+                <i class="fa-brands fa-bitcoin"></i> <span class="icon-text">加密貨幣</span>
+            </div>
+            <div class="icon" onclick="toggleLinks('fubon-links', this)">
+                <img src="assets/fubon.png" class="custom-icon" alt="Fubon Icon">
+                <span class="icon-text">富邦業務服務</span>
+            </div>
+            <div class="icon" onclick="toggleLinks('engineer-links', this)">
+                <i class="fa-solid fa-code"></i> <span class="icon-text">Engineer</span>
+            </div>
+        </div>
     </div>
-    <div id="special-content" class="expandable">
-        <img src="assets/okxrefer.png" alt="Special Content">
-        <button onclick="window.open('https://www.okx.com/join/KIWIIIII', '_blank')">前往查看</button>
+    <div id="crypto-links" class="link-section">
+        <div class="link-button" onclick="toggleExpand('special-content', this)">
+            <i class="fa-solid fa-chart-line"></i> <span>OKX | DA 合作連結</span>
+            <i class="fa-solid fa-chevron-down arrow"></i>
+        </div>
+        <div id="special-content" class="expandable">
+            <img src="assets/okxrefer.png" alt="Special Content">
+            <button onclick="window.open('https://www.okx.com/join/KIWIIIII', '_blank')">前往查看</button>
+        </div>
+        <a href="https://crypto.com/app/caxg75vqma" class="link-button"><i class="fa-brands fa-bitcoin"></i> <span>Crypto 金屬卡 | 質感流幣圈必備品</span></a>
     </div>
-    <a href="https://crypto.com/app/caxg75vqma" class="link-button"><i class="fa-brands fa-bitcoin"></i> <span>Crypto 金屬卡 | 質感流幣圈必備品</span></a>
+    <div id="engineer-links" class="link-section">
+        <a href="assets/PVP.ipa" download class="link-button" onclick="startDownload(this)">
+            <i class="fa-solid fa-download"></i> <span>下載 Player Versus Player (Beta)</span>
+        </a>
+    </div>
+    <div id="fubon-links" class="link-section">
+        <p>與我聯繫</p>
+        <a href="https://lin.ee/ulhKTJA" class="link-button"><i class="fa-brands fa-line"></i> <span> 業務專用帳號</span></a>
+    </div>
+    <div id="default-links" class="link-section active">
+        <a href="https://x.com/0x718_718" class="link-button"><i class="fa-brands fa-x-twitter"></i> <span>kiwiiii X</span></a>
+        <a href="https://x.com/eng_kiwiiii" class="link-button"><i class="fa-brands fa-x-twitter"></i> <span>Program Account</span></a>
+        <a href="https://discord.gg/Um6TRyK2bn" class="link-button"><i class="fa-brands fa-discord"></i> <span>Kiwi's Discord Channel</span></a>
+    </div>
+<!--    <a href="https://x.com/0x718_718" class="link-button"><i class="fa-brands fa-x-twitter"></i> <span>kiwiiii X</span></a>-->
+<!--    <a href="https://x.com/eng_kiwiiii" class="link-button"><i class="fa-brands fa-x-twitter"></i> <span>Program Account</span></a>-->
+<!--    <a href="https://discord.gg/Um6TRyK2bn" class="link-button"><i class="fa-brands fa-discord"></i> <span>Kiwi's Discord Channel</span></a>-->
+<!--    <a href="assets/PVP.ipa" download class="link-button" onclick="startDownload(this)">-->
+<!--        <i class="fa-solid fa-download"></i> <span>下載 Player Versus Player (Beta)</span>-->
+<!--    </a>-->
+<!--    <div class="link-button" onclick="toggleExpand('special-content', this)">-->
+<!--        <i class="fa-solid fa-chart-line"></i> <span>OKX | DA 合作連結</span>-->
+<!--        <i class="fa-solid fa-chevron-down arrow"></i>-->
+<!--    </div>-->
+<!--    <div id="special-content" class="expandable">-->
+<!--        <img src="assets/okxrefer.png" alt="Special Content">-->
+<!--        <button onclick="window.open('https://www.okx.com/join/KIWIIIII', '_blank')">前往查看</button>-->
+<!--    </div>-->
+<!--    <a href="https://crypto.com/app/caxg75vqma" class="link-button"><i class="fa-brands fa-bitcoin"></i> <span>Crypto 金屬卡 | 質感流幣圈必備品</span></a>-->
     <div class="introduction">
         <p>這個網頁記載了一些小廢物實作文章跟相關連結</p>
     </div>
@@ -165,7 +271,7 @@
     });
 
     // 只對 `.link-button` 和 `.expandable` 內的內容阻止冒泡
-    document.querySelectorAll(".link-button, .expandable button").forEach(element => {
+    document.querySelectorAll(".link-button, .expandable button, .navbar .icon").forEach(element => {
         element.addEventListener("click", function (event) {
             event.stopPropagation();
         });
@@ -223,6 +329,40 @@
         setTimeout(() => {
             button.innerHTML = '<i class="fa-solid fa-download"></i> <span>下載 Player Versus Player (Beta)</span>';
         }, 5000); // 5 秒後恢復
+    }
+
+    let currentActive = null;
+
+    function toggleLinks(sectionId, clickedIcon) {
+        const section = document.getElementById(sectionId);
+        const defaultLinks = document.getElementById("default-links");
+        const navbarIcons = document.querySelectorAll(".icon"); // 取得所有 icon
+
+        if (currentActive === section) {
+            section.classList.remove("active");
+            defaultLinks.classList.add("active"); // 恢復默認連結
+            navbarIcons.forEach(icon => {
+                icon.style.display = "flex"; // 顯示所有 icon
+                icon.querySelector(".icon-text").style.display = "none"; // 隱藏文字
+            });
+            currentActive = null;
+        } else {
+            document.querySelectorAll(".link-section").forEach(sec => sec.classList.remove("active"));
+            section.classList.add("active");
+            defaultLinks.classList.remove("active"); // 隱藏默認連結
+
+            // 隱藏其他 icon，只顯示被點擊的 icon，並顯示對應文字
+            navbarIcons.forEach(icon => {
+                if (icon === clickedIcon) {
+                    icon.style.display = "flex";
+                    icon.querySelector(".icon-text").style.display = "inline"; // 顯示文字
+                } else {
+                    icon.style.display = "none"; // 其他 icon 隱藏
+                }
+            });
+
+            currentActive = section;
+        }
     }
 
 </script>
